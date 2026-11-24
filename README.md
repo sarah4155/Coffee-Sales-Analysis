@@ -1,6 +1,9 @@
 # Coffee Shop Menu Analysis: Should the Menu Change?
 
 An end-to-end SQL and Power BI analysis of a coffee chain's sales, waste and promotion data, aimed at one business question: **should the menu change, and if so, how?**
+
+<img width="1931" height="1158" alt="Dashboard-Overview-Page" src="https://github.com/user-attachments/assets/a66b1fd3-2e36-491e-8f5b-de4adf562ec0" />
+
 ---
 
 ## Business Questions
@@ -66,14 +69,14 @@ An end-to-end SQL and Power BI analysis of a coffee chain's sales, waste and pro
 | **Menu Performance** | Menu engineering matrix, pastry waste, promo reliance (Q2, Q5) |
 | **Customers & Timing** | Sales by hour, morning share by pastry, generational preferences (Q3, Q4) |
 
-![Menu Performance](images/menu_performance.png)
-![Customers & Timing](images/customers_timing.png)
+<img width="1935" height="1160" alt="Menu-Performance-Page" src="https://github.com/user-attachments/assets/8c9a042d-9db7-4dd3-86c0-e6fb652d9d6b" />
+<img width="1932" height="1151" alt="Customers-And-Timing-Page" src="https://github.com/user-attachments/assets/a27a11a9-3efd-4198-8650-5fa5b450af2c" />
 
 ## Data Model
 
 Star schema with `sales_reciepts` as the fact table, linked to `product`, `customer` → `generations`, `sales_outlet` and `dates`. Summary SQL views (`menu_matrix`, `pastry_waste`, `daypart_sales`) feed the matrix, waste and time-of-day visuals.
 
-![Data Model](images/data_model.png)
+<img width="1722" height="1513" alt="PBI-Data_Model" src="https://github.com/user-attachments/assets/ee05db2d-ab69-4d67-a112-011e2fc1103b" />
 
 ---
 
